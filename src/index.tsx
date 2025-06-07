@@ -1,10 +1,10 @@
+// src/index.tsx
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { Causalfunnel } from "./screens/Causalfunnel";
-import { Blog } from "./screens/Blog";
+import { App } from "./App";
+
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
-    <Causalfunnel />
-    <Blog />
-  </StrictMode>,
+    <App />
+  </StrictMode>
 );
