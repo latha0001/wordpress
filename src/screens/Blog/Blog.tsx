@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "../../components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage,} from "../../components/ui/avatar";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent, CardFooter } from "../../components/ui/card";
 import { Input } from "../../components/ui/input";
@@ -146,22 +142,13 @@ export const Blog = (): JSX.Element => {
   return (
     <div
       className="bg-white flex flex-row justify-center w-full"
-      data-model-id="1:1940"
-    >
+      data-model-id="1:1940">
       <div className="bg-white w-full max-w-[1349px] relative">
         {/* Header */}
         <header className="flex items-center justify-between px-20 py-6">
           <div className="flex items-center">
-            <img
-              className="w-[29px] h-7"
-              alt="Logo"
-              src="https://c.animaapp.com/mblpmc27y2Jybo/img/group-1.png"
-            />
-            <img
-              className="ml-2 w-[146px] h-[17px]"
-              alt="Causal funnel"
-              src="https://c.animaapp.com/mblpmc27y2Jybo/img/causalfunnel.svg"
-            />
+            <img className="w-[29px] h-7" alt="Logo" src="https://c.animaapp.com/mblpmc27y2Jybo/img/group-1.png" />
+            <img className="ml-2 w-[146px] h-[17px]" alt="Causal funnel" src="https://c.animaapp.com/mblpmc27y2Jybo/img/causalfunnel.svg"/>
           </div>
 
           <nav className="flex items-center gap-6">
@@ -187,11 +174,7 @@ export const Blog = (): JSX.Element => {
           </div>
 
           <div className="flex items-center">
-            <img
-              className="w-[447px] h-[229px]"
-              alt="Blogging illustration"
-              src="https://c.animaapp.com/mblpmc27y2Jybo/img/undraw-blogging-re-kl0d-1.svg"
-            />
+            <img className="w-[447px] h-[229px]" alt="Blogging illustration" src="https://c.animaapp.com/mblpmc27y2Jybo/img/undraw-blogging-re-kl0d-1.svg" />
           </div>
         </section>
 
@@ -209,11 +192,7 @@ export const Blog = (): JSX.Element => {
                 }}
               >
                 <div className="p-2">
-                  <img
-                    className="w-full h-[237px] object-cover rounded"
-                    alt="Blog post"
-                    src={post.image}
-                  />
+                  <img className="w-full h-[237px] object-cover rounded" alt="Blog post" src={post.image} />
                 </div>
 
                 <CardContent className="p-0">
@@ -223,10 +202,7 @@ export const Blog = (): JSX.Element => {
 
                   <div className="flex items-center mt-6 ml-[18px]">
                     <Avatar className="w-11 h-11">
-                      <AvatarImage
-                        src="https://c.animaapp.com/mblpmc27y2Jybo/img/ellipse-11.png"
-                        alt="Author"
-                      />
+                      <AvatarImage src="https://c.animaapp.com/mblpmc27y2Jybo/img/ellipse-11.png" alt="Author"/>
                       <AvatarFallback>UI</AvatarFallback>
                     </Avatar>
 
@@ -242,15 +218,8 @@ export const Blog = (): JSX.Element => {
                   <div className="flex gap-2 mt-4 ml-[18px]">
                     {post.tags.map((tag, tagIndex) => (
                       <div key={tagIndex} className="relative h-[25px]">
-                        <img
-                          className="w-[68px] h-[23px]"
-                          alt="Tag background"
-                          src="https://c.animaapp.com/mblpmc27y2Jybo/img/rectangle-397.svg"
-                        />
-                        <span
-                          className="absolute top-0 left-4 font-medium text-[13px] leading-6"
-                          style={{ color: tag.color }}
-                        >
+                        <img className="w-[68px] h-[23px]"  alt="Tag background" src="https://c.animaapp.com/mblpmc27y2Jybo/img/rectangle-397.svg"/>
+                        <span className="absolute top-0 left-4 font-medium text-[13px] leading-6" style={{ color: tag.color }}>
                           {tag.name}
                         </span>
                       </div>
