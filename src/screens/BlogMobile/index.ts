@@ -1,0 +1,1 @@
+export { BlogMobile } from "./BlogMobile";
