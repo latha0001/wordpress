@@ -13,14 +13,8 @@ export function App() {
     <Router>
      <NavBar />
       <Routes>
-        <Route
-          path="/"
-          element={isMobile ? <CausalfunnelMobile /> : <Causalfunnel />}
-        />
-        <Route
-          path="/blog"
-          element={isMobile ? <BlogMobile /> : <Blog />}
-        />
+        <Route path="/" element={isMobile ? <CausalfunnelMobile /> : <Causalfunnel />} />
+        <Route  path="/blog" element={isMobile ? <BlogMobile /> : <Blog />}/>
       </Routes>
     </Router>
   );
